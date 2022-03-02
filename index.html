@@ -19,9 +19,24 @@
                 }
                 const instanceId = Math.random().toString(36).substring(2, 15);
                 const url = `https://play.workadventu.re/_/${instanceId}/${host}${path}map.json`;
+                const url2 = `https://play.workadventu.re/_/${instanceId}/${host}${path}theatre.json`;
+                const url3 = `https://play.workadventu.re/_/${instanceId}/${host}${path}hawaii.json`;
+                const url4 = `https://play.workadventu.re/_/${instanceId}/${host}${path}maze.json`;
                 document.getElementById('mapLink').href = url;
                 document.getElementById('mapLink2').href = url;
                 document.getElementById('mapLink').innerText = url;
+				
+                document.getElementById('mapLink3').href = url2;
+                document.getElementById('mapLink4').href = url2;
+                document.getElementById('mapLink3').innerText = url2;
+				
+                document.getElementById('mapLink5').href = url3;
+                document.getElementById('mapLink6').href = url3;
+                document.getElementById('mapLink5').innerText = url3;
+				
+                document.getElementById('mapLink7').href = url4;
+                document.getElementById('mapLink8').href = url4;
+                document.getElementById('mapLink7').innerText = url4;
 
                 const mapUrl = window.location.protocol+'//'+window.location.host+path+'map.json';
                 document.getElementById('mapUrl').innerText = mapUrl;
@@ -37,23 +52,32 @@
             <div style="text-align: center; margin-top: 3rem">
                 <img src="https://workadventu.re/img/logo.png" alt=""/>
             </div>
-            <div class="nes-container with-title is-centered" style="margin-top: 3rem">
-                <p class="title">WorkAdventure map</p>
-                <p>This website contains a map for <a href="https://workadventu.re">Workadventu.re</a>.</p>
-            </div>
-
             <div class="nes-container with-title is-centered" style="margin-top: 1rem">
-                <p class="title">Test this map</p>
+                <p class="title">Test Beachclub map</p>
+				<p><img src="./map.png" width="40%" height="20%"></p>
                 <p>You can test this map at <a id="mapLink" href=""></a>.</p>
                 <p><a id="mapLink2" href="" class="nes-btn is-primary">Test this map</a></p>
             </div>
 
             <div class="nes-container with-title is-centered" style="margin-top: 1rem">
-                <p class="title">Happy with the result?</p>
-                <p>Register your room on Workadventu.re.</p>
-                <p><a id="gettingStartedLink" href="" class="nes-btn is-primary">Create a new room</a></p>
-                <p>or copy and paste the map URL in WorkAdventu.re's administration panel:</p>
-                <p><span id="mapUrl" style="color: gray" /></p>
+                <p class="title">Test Theater map</p>
+				<p><img src="./theatre.png" width="40%" height="25%"></p>
+                <p>You can test this map at <a id="mapLink3" href=""></a>.</p>
+                <p><a id="mapLink4" href="" class="nes-btn is-primary">Test this map</a></p>
+            </div>
+
+            <div class="nes-container with-title is-centered" style="margin-top: 1rem">
+                <p class="title">Test Hawaii map</p>
+				<p><img src="./hawaii.png" width="40%" height="20%"></p>
+                <p>You can test this map at <a id="mapLink5" href=""></a>.</p>
+                <p><a id="mapLink6" href="" class="nes-btn is-primary">Test this map</a></p>
+            </div>
+
+            <div class="nes-container with-title is-centered" style="margin-top: 1rem">
+                <p class="title">Test Maze map</p>
+				<p><img src="./maze.png" width="40%" height="20%"></p>
+                <p>You can test this map at <a id="mapLink7" href=""></a>.</p>
+                <p><a id="mapLink8" href="" class="nes-btn is-primary">Test this map</a></p>
             </div>
         </div>
     </body>
